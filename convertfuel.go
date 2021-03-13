@@ -48,6 +48,16 @@ func PoundToGal(pound float64) string {
 
 func main() {
 
+	fmt.Println("")
+	fmt.Println("******************************************************")
+	fmt.Println("Convert fuel to Gallons, Pounds or Kile.")
+	fmt.Println("Used to calculate fuel between FsEconomy and Simbrief.")
+	fmt.Println("Author: Rafael Soares")
+	fmt.Println("https://github.com/rslewenstein")
+	fmt.Println("Version: 1.00")
+	fmt.Println("******************************************************")
+	fmt.Println("")
+
 	var gal, pounds, kg float64
 
 	fmt.Print("Enter the number of gallons (Ex.: 4800.50 or 7000): ")
@@ -64,25 +74,23 @@ func main() {
 	if gal > 0 {
 		fmt.Println(GalToPound(gal))
 		fmt.Println(GalToKilo(gal))
-	} else if gal == 0 {
-		fmt.Println("0 gal")
 	} else {
-		fmt.Println("Gallons must be value.")
+		fmt.Println("0 gal")
 	}
 
 	if pounds > 0 {
 		fmt.Println(PoundToGal(pounds))
-	} else if pounds == 0 {
-		fmt.Println("0 lb")
 	} else {
-		fmt.Println("Pounds must be value.")
+		fmt.Println("0 lb")
 	}
 
 	if kg > 0 {
 		fmt.Println(KileToGal(kg))
-	} else if kg == 0 {
-		fmt.Println("0 kg")
 	} else {
-		fmt.Println("Kile must be value.")
+		fmt.Println("0 kg")
 	}
+
+	fmt.Println("")
+	fmt.Println("Press Enter to exit...")
+	fmt.Scanln()
 }
