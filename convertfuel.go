@@ -64,25 +64,23 @@ func main() {
 	if gal > 0 {
 		fmt.Println(GalToPound(gal))
 		fmt.Println(GalToKilo(gal))
-	} else if gal == 0 {
-		fmt.Println("0 gal")
 	} else {
-		fmt.Println("Gallons must be value.")
+		fmt.Println("0 gal")
 	}
 
 	if pounds > 0 {
 		fmt.Println(PoundToGal(pounds))
-	} else if pounds == 0 {
-		fmt.Println("0 lb")
 	} else {
-		fmt.Println("Pounds must be value.")
+		fmt.Println("0 lb")
 	}
 
 	if kg > 0 {
 		fmt.Println(KileToGal(kg))
-	} else if kg == 0 {
-		fmt.Println("0 kg")
 	} else {
-		fmt.Println("Kile must be value.")
+		fmt.Println("0 kg")
 	}
+
+	fmt.Println("")
+	fmt.Println("Press Enter to exit...")
+	fmt.Scanln()
 }
