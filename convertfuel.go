@@ -5,8 +5,11 @@ import (
 	"math"
 )
 
-var refOneGalInPound float64 = 6.8 // One Gal is equals 6.8 pounds (In simulator with the Zibo)
-var refPoundToKg float64 = 2.205   // Tax to calculate between Kile and pounds
+// One Gal is equals 6.8 pounds (In simulator with the Zibo)
+var refOneGalInPound float64 = 6.8
+
+// Tax to calculate between Kile and pounds
+var refPoundToKg float64 = 2.205
 
 func GalToPound(gal float64) string {
 	var msg string
