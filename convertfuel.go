@@ -56,20 +56,21 @@ func main() {
 	fmt.Println("Convert fuel to Gallons, Pounds or Kile.")
 	fmt.Println("Used to calculate fuel between FsEconomy and Simbrief.")
 	fmt.Println("Author: Rafael Soares")
+	fmt.Println("Discord: dogMeat#9141")
 	fmt.Println("https://github.com/rslewenstein")
-	fmt.Println("Version: 1.00")
+	fmt.Println("Version: 1.01")
 	fmt.Println("******************************************************")
 	fmt.Println("")
 
 	var gal, pounds, kg float64
 
-	fmt.Print("Enter the number of gallons (Ex.: 4800.50 or 7000): ")
+	fmt.Print("Enter the number of gallons(gal) (Ex.: 4800.50 or 7000): ")
 	fmt.Scanln(&gal)
 
-	fmt.Print("Enter the number of pounds (Ex.: 4800.50 or 7000): ")
+	fmt.Print("Enter the number of pounds(lb) (Ex.: 4800.50 or 7000): ")
 	fmt.Scanln(&pounds)
 
-	fmt.Print("Enter the number of kile (Ex.: 4800.50 or 7000): ")
+	fmt.Print("Enter the number of kile(kg) (Ex.: 4800.50 or 7000): ")
 	fmt.Scanln(&kg)
 
 	fmt.Println("")
